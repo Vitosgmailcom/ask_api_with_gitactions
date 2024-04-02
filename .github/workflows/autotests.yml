@@ -1,0 +1,25 @@
+name: Running API tests for ASK
+
+on:
+  push
+
+env:
+  db_user: "Need to add user name"
+  db_pass: "Need to add password"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - name: Setup dependencies
+        run: pip install -r requirements.txt
+      - name: Run Healthcheckctest
+        run: pytest -m tcid00
+
