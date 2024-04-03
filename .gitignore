@@ -3,3 +3,4 @@ venv
 setup.py
 Dockerfile
 Jenkinsfile
+allure-results

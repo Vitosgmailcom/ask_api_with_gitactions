@@ -2,10 +2,13 @@ name: Running API tests for ASK
 
 on:
   push
-
+## ${{ secrets.SuperSecret }}
 env:
-  db_user: "Need to add user name"
-  db_pass: "Need to add password"
+  db_user: ${{ secrets.DB_USER }}
+  db_pass: ${{ secrets.DB_PASS }}
+  db_name: ${{ secrets.DB_NAME }}
+  db_port: ${{ secrets.DB_PORT }}
+  db_host: ${{ secrets.DB_HOST }}
 
 jobs:
   test:
