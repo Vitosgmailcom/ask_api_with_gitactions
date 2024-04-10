@@ -23,5 +23,5 @@ COPY ./setup.py /usr/workspace
 COPY ./requirements.txt /usr/workspace
 
 # Install Python dependencies
-RUN pip3 install -r requirements.txt
-#RUN python3 setup.py install
+#RUN pip3 install -r requirements.txt
+RUN python3 setup.py install
