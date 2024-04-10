@@ -1,28 +1,23 @@
-name: Running API tests for ASK
+name: UI Tests
 
-on:
-  push
-## ${{ secrets.SuperSecret }}
-env:
-  db_user: ${{ secrets.DB_USER }}
-  db_pass: ${{ secrets.DB_PASS }}
-  db_name: ${{ secrets.DB_NAME }}
-  db_port: ${{ secrets.DB_PORT }}
-  db_host: ${{ secrets.DB_HOST }}
+on: workflow_dispatch
 
 jobs:
-  test:
+  ui-tests:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Install Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.10"
-      - name: Setup dependencies
-        run: pip install -r requirements.txt
-      - name: Run Healthcheckctest
-        run: pytest
+      - uses: actions/checkout@v2
 
+      - name: Checkout (copy) gh-pages repository to GitHub runner
+        uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+          path: ./.github/gh-pages
+
+      - name: Run UI-tests via docker-compose
+#        env:
+#          LOGIN: ${{ secrets.LOGIN }}
+#          PASSWORD: ${{ secrets.PASSWORD }}
+        run: |
+          docker-compose up --exit-code-from regression || true
