@@ -1,0 +1,2 @@
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:244 Starting new HTTP connection (1): ask-stage.portnov.com:80
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:549 http://ask-stage.portnov.com:80 "POST /api/v1/sign-up HTTP/1.1" 200 49

@@ -1,0 +1,8 @@
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:244 Starting new HTTP connection (1): ask-stage.portnov.com:80
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:549 http://ask-stage.portnov.com:80 "POST /api/v1/sign-up HTTP/1.1" 200 49
+[32mINFO    [0m root:credentialsDB.py:21 {'db_user': 'testuser', 'db_pass': 'password', 'db_name': 'application', 'db_port': '3307', 'db_host': '44.205.92.189'}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:244 Starting new HTTP connection (1): ask-stage.portnov.com:80
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:549 http://ask-stage.portnov.com:80 "GET /api/v1/activate/30050/0bee76b7f437eb003b33c57b4949f119cb444498 HTTP/1.1" 400 790
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:244 Starting new HTTP connection (1): ask-stage.portnov.com:80
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:549 http://ask-stage.portnov.com:80 "GET /api/v1/activate/30050/0bee76b7f437eb003b33c57b4949f119cb444498 HTTP/1.1" 200 51
+[35mDEBUG   [0m root:Authorization_API_test.py:43 User was activated
