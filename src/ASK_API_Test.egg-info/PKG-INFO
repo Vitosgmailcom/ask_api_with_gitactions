@@ -1,7 +1,3 @@
 Metadata-Version: 2.1
 Name: ASK-API-Test
 Version: 1.0
-Requires-Dist: pytest==8.1.1
-Requires-Dist: pymysql==1.1.0
-Requires-Dist: requests==2.31.0
-Requires-Dist: allure-pytest==2.13.5
