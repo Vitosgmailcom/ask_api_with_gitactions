@@ -1,9 +1,12 @@
 import logging as log
 import os
 
+from dotenv import load_dotenv
+load_dotenv()
+
 def credentialsDB():
-    db_user = os.getenv('DB_USER')
-    db_pass = os.getenv('DB_PASS')
+    db_user = os.environ.get('DB_USER')
+    db_pass = os.environ.get('DB_PASS')
     db_name = os.getenv('DB_NAME')
     db_port = os.getenv('DB_PORT')
     db_host = os.getenv('DB_HOST')
