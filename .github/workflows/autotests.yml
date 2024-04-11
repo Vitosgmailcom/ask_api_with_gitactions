@@ -1,7 +1,6 @@
-name: Running API tests for ASK
+name: API_test
 
-on:
-  push
+on: workflow_dispatch
 ## ${{ secrets.SuperSecret }}
 env:
   db_user: ${{ secrets.DB_USER }}
