@@ -11,13 +11,13 @@ services:
     command: /bin/sh -c "ls -la && pytest -m tcid02"
     working_dir: /usr/workspace
     environment:
-#      - db_user=${db_user}
-#      - db_pass=${db_pass}
-#      - db_name=${db_name}
-#      - db_port=${db_port}
-#      - db_host=${db_host}
-      - db_user=${{ secrets.DB_USER }}
-      - db_pass=${{ secrets.DB_PASS }}
-      - db_name=${{ secrets.DB_NAME }}
-      - db_port=${{ secrets.DB_PORT }}
-      - db_host=${{ secrets.DB_HOST }}
+      - db_user=${db_user}
+      - db_pass=${db_pass}
+      - db_name=${db_name}
+      - db_port=${db_port}
+      - db_host=${db_host}
+#      - db_user=${{ secrets.DB_USER }}
+#      - db_pass=${{ secrets.DB_PASS }}
+#      - db_name=${{ secrets.DB_NAME }}
+#      - db_port=${{ secrets.DB_PORT }}
+#      - db_host=${{ secrets.DB_HOST }}
