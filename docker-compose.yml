@@ -11,8 +11,8 @@ services:
     command: /bin/sh -c "ls -la && pytest -m tcid02"
     working_dir: /usr/workspace
     environment:
-      - DB_USER=${testuser}
-      - DB_PASS=${password}
+      - DB_USER=${DB_USER}
+      - DB_PASS=${DB_PASS}
       - DB_NAME=${DB_NAME}
       - DB_PORT=${DB_PORT}
       - DB_HOST=${DB_HOST}
