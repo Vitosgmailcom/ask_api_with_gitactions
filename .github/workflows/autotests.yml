@@ -1,6 +1,6 @@
 name: API_test
 
-on: workflow_dispatch
+on: push #workflow_dispatch
 ## ${{ secrets.SuperSecret }}
 #env:
 #  db_user: ${{ secrets.DB_USER }}
