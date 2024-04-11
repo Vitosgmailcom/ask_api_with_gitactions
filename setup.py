@@ -8,7 +8,8 @@ setup(name="ASK API Test",
           "pymysql==1.1.0",
           "requests==2.31.0",
           "allure-pytest==2.13.5",
-          "chardet==5.2.0"
+          "chardet==5.2.0",
+          "python-dotenv==1.0.1"
 
 
           ]
